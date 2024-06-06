@@ -11,7 +11,7 @@ const lessMiddleware = require('less-middleware');
 app.use(lessMiddleware(path.join(__dirname, 'public')));
 // Expose all static resources in /public
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
 // Redirect to the main page on aws
 app.get('/', (request, response) => {
