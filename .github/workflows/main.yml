@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   depchecktest:
-    runs-on: ip-172-31-30-60
+    runs-on: self-hosted
     name: depecheck_test
     steps:
       - name: Checkout
