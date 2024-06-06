@@ -13,7 +13,7 @@ app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
-// Redirect to the main page
+// Redirect to the main page on aws
 app.get('/', (request, response) => {
     response.sendFile('game.html', { root: path.join(__dirname, 'app/views') });
 });
