@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   depchecktest:
-    runs-on: ubuntu-latest
+    runs-on: ip-172-31-30-60
     name: depecheck_test
     steps:
       - name: Checkout
